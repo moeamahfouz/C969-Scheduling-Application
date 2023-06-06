@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\akita\\source\\repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj": {}
+    "C:\\Users\\akita\\Source\\Repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\akita\\source\\repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj": {
+    "C:\\Users\\akita\\Source\\Repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\akita\\source\\repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj",
+        "projectUniqueName": "C:\\Users\\akita\\Source\\Repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj",
         "projectName": "C969 Scheduling Application",
-        "projectPath": "C:\\Users\\akita\\source\\repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj",
+        "projectPath": "C:\\Users\\akita\\Source\\Repos\\C969-Scheduling-Application\\C969 Scheduling Application.csproj",
         "packagesPath": "C:\\Users\\akita\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\akita\\source\\repos\\C969-Scheduling-Application\\obj\\",
+        "outputPath": "C:\\Users\\akita\\Source\\Repos\\C969-Scheduling-Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\akita\\AppData\\Roaming\\NuGet\\NuGet.Config",
