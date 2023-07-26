@@ -34,8 +34,8 @@
             label3 = new Label();
             NewCustPhone = new TextBox();
             label8 = new Label();
-            AddCustActiveYes = new RadioButton();
-            AddCustActiveNo = new RadioButton();
+            NewCustActiveYes = new RadioButton();
+            NewCustActiveNo = new RadioButton();
             label4 = new Label();
             NewCustStreet = new TextBox();
             label5 = new Label();
@@ -100,27 +100,27 @@
             label8.TabIndex = 14;
             label8.Text = "Customer Active:";
             // 
-            // AddCustActiveYes
+            // NewCustActiveYes
             // 
-            AddCustActiveYes.AutoSize = true;
-            AddCustActiveYes.Location = new Point(142, 140);
-            AddCustActiveYes.Name = "AddCustActiveYes";
-            AddCustActiveYes.Size = new Size(42, 19);
-            AddCustActiveYes.TabIndex = 15;
-            AddCustActiveYes.TabStop = true;
-            AddCustActiveYes.Text = "Yes";
-            AddCustActiveYes.UseVisualStyleBackColor = true;
+            NewCustActiveYes.AutoSize = true;
+            NewCustActiveYes.Location = new Point(142, 140);
+            NewCustActiveYes.Name = "NewCustActiveYes";
+            NewCustActiveYes.Size = new Size(42, 19);
+            NewCustActiveYes.TabIndex = 15;
+            NewCustActiveYes.TabStop = true;
+            NewCustActiveYes.Text = "Yes";
+            NewCustActiveYes.UseVisualStyleBackColor = true;
             // 
-            // AddCustActiveNo
+            // NewCustActiveNo
             // 
-            AddCustActiveNo.AutoSize = true;
-            AddCustActiveNo.Location = new Point(221, 140);
-            AddCustActiveNo.Name = "AddCustActiveNo";
-            AddCustActiveNo.Size = new Size(41, 19);
-            AddCustActiveNo.TabIndex = 16;
-            AddCustActiveNo.TabStop = true;
-            AddCustActiveNo.Text = "No";
-            AddCustActiveNo.UseVisualStyleBackColor = true;
+            NewCustActiveNo.AutoSize = true;
+            NewCustActiveNo.Location = new Point(221, 140);
+            NewCustActiveNo.Name = "NewCustActiveNo";
+            NewCustActiveNo.Size = new Size(41, 19);
+            NewCustActiveNo.TabIndex = 16;
+            NewCustActiveNo.TabStop = true;
+            NewCustActiveNo.Text = "No";
+            NewCustActiveNo.UseVisualStyleBackColor = true;
             // 
             // label4
             // 
@@ -221,8 +221,8 @@
             Controls.Add(label5);
             Controls.Add(NewCustStreet);
             Controls.Add(label4);
-            Controls.Add(AddCustActiveNo);
-            Controls.Add(AddCustActiveYes);
+            Controls.Add(NewCustActiveNo);
+            Controls.Add(NewCustActiveYes);
             Controls.Add(label8);
             Controls.Add(NewCustPhone);
             Controls.Add(label3);
@@ -243,8 +243,8 @@
         private Label label3;
         private TextBox NewCustPhone;
         private Label label8;
-        private RadioButton AddCustActiveYes;
-        private RadioButton AddCustActiveNo;
+        private RadioButton NewCustActiveYes;
+        private RadioButton NewCustActiveNo;
         private Label label4;
         private TextBox NewCustStreet;
         private Label label5;

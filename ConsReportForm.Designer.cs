@@ -29,50 +29,54 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            ConsReportGrid = new DataGridView();
+            ConsReport = new DataGridView();
             ConsReportExit = new Button();
-            ((System.ComponentModel.ISupportInitialize)ConsReportGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)ConsReport).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(293, 48);
+            label1.Location = new Point(171, 24);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(531, 30);
+            label1.Size = new Size(300, 15);
             label1.TabIndex = 4;
             label1.Text = "Below is a report generated for the system's consultants";
             // 
-            // ConsReportGrid
+            // ConsReport
             // 
-            ConsReportGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            ConsReportGrid.Location = new Point(66, 96);
-            ConsReportGrid.Name = "ConsReportGrid";
-            ConsReportGrid.RowHeadersWidth = 72;
-            ConsReportGrid.RowTemplate.Height = 37;
-            ConsReportGrid.Size = new Size(1015, 699);
-            ConsReportGrid.TabIndex = 5;
+            ConsReport.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            ConsReport.Location = new Point(38, 48);
+            ConsReport.Margin = new Padding(2, 2, 2, 2);
+            ConsReport.Name = "ConsReport";
+            ConsReport.RowHeadersWidth = 72;
+            ConsReport.RowTemplate.Height = 37;
+            ConsReport.Size = new Size(592, 350);
+            ConsReport.TabIndex = 5;
             // 
             // ConsReportExit
             // 
-            ConsReportExit.Location = new Point(1003, 838);
+            ConsReportExit.Location = new Point(585, 419);
+            ConsReportExit.Margin = new Padding(2, 2, 2, 2);
             ConsReportExit.Name = "ConsReportExit";
-            ConsReportExit.Size = new Size(131, 40);
+            ConsReportExit.Size = new Size(76, 20);
             ConsReportExit.TabIndex = 6;
             ConsReportExit.Text = "Exit";
             ConsReportExit.UseVisualStyleBackColor = true;
             // 
             // ConsReportForm
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1146, 890);
+            ClientSize = new Size(668, 445);
             Controls.Add(ConsReportExit);
-            Controls.Add(ConsReportGrid);
+            Controls.Add(ConsReport);
             Controls.Add(label1);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "ConsReportForm";
             Text = "ConsReportForm";
-            ((System.ComponentModel.ISupportInitialize)ConsReportGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)ConsReport).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -80,7 +84,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView ConsReportGrid;
+        private DataGridView ConsReport;
         private Button ConsReportExit;
     }
 }

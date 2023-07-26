@@ -39,43 +39,41 @@
             DelCustStreet = new Label();
             DelCustCity = new Label();
             DelCustZip = new Label();
+            DelCustCountry = new Label();
+            DelCustActive = new Label();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(76, 40);
-            label1.Margin = new Padding(5, 0, 5, 0);
+            label1.Location = new Point(74, 9);
             label1.Name = "label1";
-            label1.Size = new Size(1064, 32);
+            label1.Size = new Size(609, 19);
             label1.TabIndex = 0;
             label1.Text = "Please enter the customer's ID that you wish to delete, look over their information, then hit Delete";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(23, 154);
-            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Location = new Point(13, 77);
             label2.Name = "label2";
-            label2.Size = new Size(134, 30);
+            label2.Size = new Size(76, 15);
             label2.TabIndex = 2;
             label2.Text = "Customer ID:";
             // 
             // DelCustID
             // 
-            DelCustID.Location = new Point(157, 151);
-            DelCustID.Margin = new Padding(5, 6, 5, 6);
+            DelCustID.Location = new Point(92, 76);
             DelCustID.Name = "DelCustID";
-            DelCustID.Size = new Size(187, 35);
+            DelCustID.Size = new Size(111, 23);
             DelCustID.TabIndex = 3;
             // 
             // DelCustSearch
             // 
-            DelCustSearch.Location = new Point(381, 146);
-            DelCustSearch.Margin = new Padding(5, 6, 5, 6);
+            DelCustSearch.Location = new Point(222, 73);
             DelCustSearch.Name = "DelCustSearch";
-            DelCustSearch.Size = new Size(129, 46);
+            DelCustSearch.Size = new Size(75, 23);
             DelCustSearch.TabIndex = 4;
             DelCustSearch.Text = "Search";
             DelCustSearch.UseVisualStyleBackColor = true;
@@ -83,10 +81,9 @@
             // DelCustDel
             // 
             DelCustDel.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            DelCustDel.Location = new Point(28, 303);
-            DelCustDel.Margin = new Padding(5, 6, 5, 6);
+            DelCustDel.Location = new Point(16, 152);
             DelCustDel.Name = "DelCustDel";
-            DelCustDel.Size = new Size(145, 56);
+            DelCustDel.Size = new Size(85, 28);
             DelCustDel.TabIndex = 12;
             DelCustDel.Text = "Delete";
             DelCustDel.UseVisualStyleBackColor = true;
@@ -94,10 +91,9 @@
             // DelCustCancel
             // 
             DelCustCancel.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            DelCustCancel.Location = new Point(199, 303);
-            DelCustCancel.Margin = new Padding(5, 6, 5, 6);
+            DelCustCancel.Location = new Point(116, 152);
             DelCustCancel.Name = "DelCustCancel";
-            DelCustCancel.Size = new Size(145, 56);
+            DelCustCancel.Size = new Size(85, 28);
             DelCustCancel.TabIndex = 13;
             DelCustCancel.Text = "Cancel";
             DelCustCancel.UseVisualStyleBackColor = true;
@@ -105,58 +101,73 @@
             // DelCustName
             // 
             DelCustName.AutoSize = true;
-            DelCustName.Location = new Point(679, 92);
-            DelCustName.Margin = new Padding(5, 0, 5, 0);
+            DelCustName.Location = new Point(328, 47);
             DelCustName.Name = "DelCustName";
-            DelCustName.Size = new Size(74, 30);
+            DelCustName.Size = new Size(42, 15);
             DelCustName.TabIndex = 14;
             DelCustName.Text = "Name:";
             // 
             // DelCustPhone
             // 
             DelCustPhone.AutoSize = true;
-            DelCustPhone.Location = new Point(594, 146);
-            DelCustPhone.Margin = new Padding(5, 0, 5, 0);
+            DelCustPhone.Location = new Point(328, 77);
             DelCustPhone.Name = "DelCustPhone";
-            DelCustPhone.Size = new Size(159, 30);
+            DelCustPhone.Size = new Size(91, 15);
             DelCustPhone.TabIndex = 15;
             DelCustPhone.Text = "Phone Number:";
             // 
             // DelCustStreet
             // 
             DelCustStreet.AutoSize = true;
-            DelCustStreet.Location = new Point(602, 201);
-            DelCustStreet.Margin = new Padding(5, 0, 5, 0);
+            DelCustStreet.Location = new Point(533, 47);
             DelCustStreet.Name = "DelCustStreet";
-            DelCustStreet.Size = new Size(151, 30);
+            DelCustStreet.Size = new Size(85, 15);
             DelCustStreet.TabIndex = 16;
             DelCustStreet.Text = "Street Address:";
             // 
             // DelCustCity
             // 
             DelCustCity.AutoSize = true;
-            DelCustCity.Location = new Point(700, 261);
-            DelCustCity.Margin = new Padding(5, 0, 5, 0);
+            DelCustCity.Location = new Point(533, 77);
             DelCustCity.Name = "DelCustCity";
-            DelCustCity.Size = new Size(53, 30);
+            DelCustCity.Size = new Size(31, 15);
             DelCustCity.TabIndex = 17;
             DelCustCity.Text = "City:";
             // 
             // DelCustZip
             // 
             DelCustZip.AutoSize = true;
-            DelCustZip.Location = new Point(652, 317);
-            DelCustZip.Margin = new Padding(5, 0, 5, 0);
+            DelCustZip.Location = new Point(533, 107);
             DelCustZip.Name = "DelCustZip";
-            DelCustZip.Size = new Size(101, 30);
+            DelCustZip.Size = new Size(58, 15);
             DelCustZip.TabIndex = 18;
             DelCustZip.Text = "Zip Code:";
             // 
+            // DelCustCountry
+            // 
+            DelCustCountry.AutoSize = true;
+            DelCustCountry.Location = new Point(533, 134);
+            DelCustCountry.Name = "DelCustCountry";
+            DelCustCountry.Size = new Size(53, 15);
+            DelCustCountry.TabIndex = 19;
+            DelCustCountry.Text = "Country:";
+            // 
+            // DelCustActive
+            // 
+            DelCustActive.AutoSize = true;
+            DelCustActive.Location = new Point(328, 107);
+            DelCustActive.Name = "DelCustActive";
+            DelCustActive.Size = new Size(98, 15);
+            DelCustActive.TabIndex = 20;
+            DelCustActive.Text = "Customer Active:";
+            // 
             // DelCustForm
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1214, 374);
+            ClientSize = new Size(771, 187);
+            Controls.Add(DelCustActive);
+            Controls.Add(DelCustCountry);
             Controls.Add(DelCustZip);
             Controls.Add(DelCustCity);
             Controls.Add(DelCustStreet);
@@ -168,7 +179,6 @@
             Controls.Add(DelCustID);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(5, 6, 5, 6);
             Name = "DelCustForm";
             Text = "Delete A Customer";
             ResumeLayout(false);
@@ -188,5 +198,7 @@
         private Label DelCustStreet;
         private Label DelCustCity;
         private Label DelCustZip;
+        private Label DelCustCountry;
+        private Label DelCustActive;
     }
 }

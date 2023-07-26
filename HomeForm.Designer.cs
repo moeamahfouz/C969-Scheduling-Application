@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            DashboardAppGrid = new DataGridView();
+            HomeCalendar = new DataGridView();
             HomeRadioWeek = new RadioButton();
             HomeRadioMonth = new RadioButton();
-            HomeAddApp = new Button();
+            HomeNewApp = new Button();
             HomeUpdApp = new Button();
             HomeDelApp = new Button();
             label2 = new Label();
@@ -44,37 +44,37 @@
             HomeCustReport = new Button();
             HomeConsReport = new Button();
             HomeExit = new Button();
-            ((System.ComponentModel.ISupportInitialize)DashboardAppGrid).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)HomeCalendar).BeginInit();
             SuspendLayout();
             // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(22, 18);
+            label1.Location = new Point(13, 9);
+            label1.Margin = new Padding(2, 0, 2, 0);
             label1.Name = "label1";
-            label1.Size = new Size(119, 47);
+            label1.Size = new Size(68, 28);
             label1.TabIndex = 0;
             label1.Text = "Home";
             // 
-            // DashboardAppGrid
+            // HomeCalendar
             // 
-            DashboardAppGrid.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            DashboardAppGrid.Location = new Point(22, 182);
-            DashboardAppGrid.Margin = new Padding(3, 4, 3, 4);
-            DashboardAppGrid.Name = "DashboardAppGrid";
-            DashboardAppGrid.RowHeadersWidth = 72;
-            DashboardAppGrid.RowTemplate.Height = 25;
-            DashboardAppGrid.Size = new Size(1042, 758);
-            DashboardAppGrid.TabIndex = 5;
+            HomeCalendar.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            HomeCalendar.Location = new Point(13, 91);
+            HomeCalendar.Margin = new Padding(2, 2, 2, 2);
+            HomeCalendar.Name = "HomeCalendar";
+            HomeCalendar.RowHeadersWidth = 72;
+            HomeCalendar.RowTemplate.Height = 25;
+            HomeCalendar.Size = new Size(608, 379);
+            HomeCalendar.TabIndex = 5;
             // 
             // HomeRadioWeek
             // 
             HomeRadioWeek.AutoSize = true;
-            HomeRadioWeek.Location = new Point(22, 134);
-            HomeRadioWeek.Margin = new Padding(5, 6, 5, 6);
+            HomeRadioWeek.Location = new Point(13, 67);
             HomeRadioWeek.Name = "HomeRadioWeek";
-            HomeRadioWeek.Size = new Size(160, 34);
+            HomeRadioWeek.Size = new Size(94, 19);
             HomeRadioWeek.TabIndex = 15;
             HomeRadioWeek.TabStop = true;
             HomeRadioWeek.Text = "Sort By Week";
@@ -83,41 +83,37 @@
             // HomeRadioMonth
             // 
             HomeRadioMonth.AutoSize = true;
-            HomeRadioMonth.Location = new Point(249, 134);
-            HomeRadioMonth.Margin = new Padding(5, 6, 5, 6);
+            HomeRadioMonth.Location = new Point(145, 67);
             HomeRadioMonth.Name = "HomeRadioMonth";
-            HomeRadioMonth.Size = new Size(171, 34);
+            HomeRadioMonth.Size = new Size(101, 19);
             HomeRadioMonth.TabIndex = 16;
             HomeRadioMonth.TabStop = true;
             HomeRadioMonth.Text = "Sort By Month";
             HomeRadioMonth.UseVisualStyleBackColor = true;
             // 
-            // HomeAddApp
+            // HomeNewApp
             // 
-            HomeAddApp.Location = new Point(22, 972);
-            HomeAddApp.Margin = new Padding(5, 6, 5, 6);
-            HomeAddApp.Name = "HomeAddApp";
-            HomeAddApp.Size = new Size(206, 46);
-            HomeAddApp.TabIndex = 17;
-            HomeAddApp.Text = "New Appointment";
-            HomeAddApp.UseVisualStyleBackColor = true;
+            HomeNewApp.Location = new Point(13, 486);
+            HomeNewApp.Name = "HomeNewApp";
+            HomeNewApp.Size = new Size(120, 23);
+            HomeNewApp.TabIndex = 17;
+            HomeNewApp.Text = "New Appointment";
+            HomeNewApp.UseVisualStyleBackColor = true;
             // 
             // HomeUpdApp
             // 
-            HomeUpdApp.Location = new Point(279, 972);
-            HomeUpdApp.Margin = new Padding(5, 6, 5, 6);
+            HomeUpdApp.Location = new Point(163, 486);
             HomeUpdApp.Name = "HomeUpdApp";
-            HomeUpdApp.Size = new Size(233, 46);
+            HomeUpdApp.Size = new Size(136, 23);
             HomeUpdApp.TabIndex = 18;
             HomeUpdApp.Text = "Update Appointment";
             HomeUpdApp.UseVisualStyleBackColor = true;
             // 
             // HomeDelApp
             // 
-            HomeDelApp.Location = new Point(566, 972);
-            HomeDelApp.Margin = new Padding(5, 6, 5, 6);
+            HomeDelApp.Location = new Point(330, 486);
             HomeDelApp.Name = "HomeDelApp";
-            HomeDelApp.Size = new Size(233, 46);
+            HomeDelApp.Size = new Size(136, 23);
             HomeDelApp.TabIndex = 19;
             HomeDelApp.Text = "Delete Appointment";
             HomeDelApp.UseVisualStyleBackColor = true;
@@ -126,39 +122,35 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.Location = new Point(1236, 72);
-            label2.Margin = new Padding(5, 0, 5, 0);
+            label2.Location = new Point(721, 36);
             label2.Name = "label2";
-            label2.Size = new Size(116, 38);
+            label2.Size = new Size(66, 21);
             label2.TabIndex = 20;
             label2.Text = "Settings";
             // 
             // HomeAddCust
             // 
-            HomeAddCust.Location = new Point(1198, 182);
-            HomeAddCust.Margin = new Padding(5, 6, 5, 6);
+            HomeAddCust.Location = new Point(699, 91);
             HomeAddCust.Name = "HomeAddCust";
-            HomeAddCust.Size = new Size(195, 46);
+            HomeAddCust.Size = new Size(114, 23);
             HomeAddCust.TabIndex = 21;
             HomeAddCust.Text = "New Customer";
             HomeAddCust.UseVisualStyleBackColor = true;
             // 
             // HomeUpdCust
             // 
-            HomeUpdCust.Location = new Point(1198, 266);
-            HomeUpdCust.Margin = new Padding(5, 6, 5, 6);
+            HomeUpdCust.Location = new Point(699, 133);
             HomeUpdCust.Name = "HomeUpdCust";
-            HomeUpdCust.Size = new Size(195, 46);
+            HomeUpdCust.Size = new Size(114, 23);
             HomeUpdCust.TabIndex = 22;
             HomeUpdCust.Text = "Update Customer";
             HomeUpdCust.UseVisualStyleBackColor = true;
             // 
             // HomeDelCust
             // 
-            HomeDelCust.Location = new Point(1198, 348);
-            HomeDelCust.Margin = new Padding(5, 6, 5, 6);
+            HomeDelCust.Location = new Point(699, 174);
             HomeDelCust.Name = "HomeDelCust";
-            HomeDelCust.Size = new Size(195, 46);
+            HomeDelCust.Size = new Size(114, 23);
             HomeDelCust.TabIndex = 23;
             HomeDelCust.Text = "Delete Customer";
             HomeDelCust.UseVisualStyleBackColor = true;
@@ -167,58 +159,53 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(1236, 482);
-            label3.Margin = new Padding(5, 0, 5, 0);
+            label3.Location = new Point(721, 241);
             label3.Name = "label3";
-            label3.Size = new Size(111, 38);
+            label3.Size = new Size(64, 21);
             label3.TabIndex = 24;
             label3.Text = "Reports";
             // 
             // HomeAppReport
             // 
-            HomeAppReport.Location = new Point(1198, 574);
-            HomeAppReport.Margin = new Padding(5, 6, 5, 6);
+            HomeAppReport.Location = new Point(699, 287);
             HomeAppReport.Name = "HomeAppReport";
-            HomeAppReport.Size = new Size(195, 46);
+            HomeAppReport.Size = new Size(114, 23);
             HomeAppReport.TabIndex = 25;
             HomeAppReport.Text = "Appointments";
             HomeAppReport.UseVisualStyleBackColor = true;
             // 
             // HomeCustReport
             // 
-            HomeCustReport.Location = new Point(1198, 744);
-            HomeCustReport.Margin = new Padding(5, 6, 5, 6);
+            HomeCustReport.Location = new Point(699, 372);
             HomeCustReport.Name = "HomeCustReport";
-            HomeCustReport.Size = new Size(195, 46);
+            HomeCustReport.Size = new Size(114, 23);
             HomeCustReport.TabIndex = 26;
             HomeCustReport.Text = "Customers";
             HomeCustReport.UseVisualStyleBackColor = true;
             // 
             // HomeConsReport
             // 
-            HomeConsReport.Location = new Point(1198, 661);
-            HomeConsReport.Margin = new Padding(5, 6, 5, 6);
+            HomeConsReport.Location = new Point(699, 331);
             HomeConsReport.Name = "HomeConsReport";
-            HomeConsReport.Size = new Size(195, 46);
+            HomeConsReport.Size = new Size(114, 23);
             HomeConsReport.TabIndex = 27;
             HomeConsReport.Text = "Consultants";
             HomeConsReport.UseVisualStyleBackColor = true;
             // 
             // HomeExit
             // 
-            HomeExit.Location = new Point(1409, 972);
-            HomeExit.Margin = new Padding(5, 6, 5, 6);
+            HomeExit.Location = new Point(822, 486);
             HomeExit.Name = "HomeExit";
-            HomeExit.Size = new Size(105, 66);
+            HomeExit.Size = new Size(61, 33);
             HomeExit.TabIndex = 28;
             HomeExit.Text = "Exit";
             HomeExit.UseVisualStyleBackColor = true;
             // 
             // HomeForm
             // 
-            AutoScaleDimensions = new SizeF(12F, 30F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1534, 1062);
+            ClientSize = new Size(895, 531);
             Controls.Add(HomeExit);
             Controls.Add(HomeConsReport);
             Controls.Add(HomeCustReport);
@@ -230,15 +217,15 @@
             Controls.Add(label2);
             Controls.Add(HomeDelApp);
             Controls.Add(HomeUpdApp);
-            Controls.Add(HomeAddApp);
+            Controls.Add(HomeNewApp);
             Controls.Add(HomeRadioMonth);
             Controls.Add(HomeRadioWeek);
-            Controls.Add(DashboardAppGrid);
+            Controls.Add(HomeCalendar);
             Controls.Add(label1);
-            Margin = new Padding(3, 4, 3, 4);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "HomeForm";
             Text = "Home";
-            ((System.ComponentModel.ISupportInitialize)DashboardAppGrid).EndInit();
+            ((System.ComponentModel.ISupportInitialize)HomeCalendar).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -246,10 +233,10 @@
         #endregion
 
         private Label label1;
-        private DataGridView DashboardAppGrid;
+        private DataGridView HomeCalendar;
         private RadioButton HomeRadioWeek;
         private RadioButton HomeRadioMonth;
-        private Button HomeAddApp;
+        private Button HomeNewApp;
         private Button HomeUpdApp;
         private Button HomeDelApp;
         private Label label2;
