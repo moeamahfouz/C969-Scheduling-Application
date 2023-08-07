@@ -64,6 +64,8 @@
             ConsReportExit.TabIndex = 6;
             ConsReportExit.Text = "Exit";
             ConsReportExit.UseVisualStyleBackColor = true;
+            this.ConsReportExit.Click += new System.EventHandler(this.ConsReportExit_Click);
+
             // 
             // ConsReportForm
             // 

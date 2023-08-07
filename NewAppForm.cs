@@ -15,19 +15,19 @@ namespace C969_Scheduling_Application
         public NewAppForm()
         {
             InitializeComponent();
-            AddAppEnd.Value = AddAppEnd.Value.AddHours(2); //Defaults the "Appointment End" box to two hours from set time
+            NewAppEnd.Value = NewAppEnd.Value.AddHours(2); //Defaults the "Appointment End" box to two hours from set time
         }
 
         public HomeForm HomeNewApp; //Connects to function that opens this form
 
 
-        private void AddAppSave_Click(object sender, EventArgs e) //Save button for Add Appointment page.
+        private void NewAppSave_Click(object sender, EventArgs e) //Save button for Add Appointment page.
         {
             string timestamp = AppDatabase.LogTimeStamp();
             int userid = AppDatabase.GetUserID();
             string username = AppDatabase.GetUserName();
-            DateTime startTime = AddAppStart.Value.ToUniversalTime();
-            DateTime endTime = AddAppEnd.Value.ToUniversalTime();
+            DateTime startTime = NewAppStart.Value.ToUniversalTime();
+            DateTime endTime = NewAppEnd.Value.ToUniversalTime();
 
             try
             {
@@ -45,7 +45,7 @@ namespace C969_Scheduling_Application
                         else
                         {
                             AppDatabase.NewLog(timestamp, username, "appointment",
-                                $"'{AddAppCustID.Text}', '{AddAppStart.Value.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")}', '{AddAppEnd.Value.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")}', '{AddAppType.Text}'", //Saves start and end dates in proper MySQL date format.
+                                $"'{NewAppCustID.Text}', '{NewAppStart.Value.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")}', '{NewAppEnd.Value.ToUniversalTime().ToString("yyyy-MM-dd HH:mm:ss")}', '{NewAppType.Text}'", //Saves start and end dates in proper MySQL date format.
                                 userid);
                             HomeNewApp.HomeCalUpdate(); //Updates homepage calendar to reflect appointment changes.
 
@@ -96,7 +96,7 @@ namespace C969_Scheduling_Application
             }
         }
 
-        private void AddAppCancel_Click(object sender, EventArgs e)
+        private void NewAppCancel_Click(object sender, EventArgs e)
         {
             Close();
         }

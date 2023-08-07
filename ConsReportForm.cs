@@ -36,5 +36,10 @@ namespace C969_Scheduling_Application
             return appList.ToArray();
         }
 
+        private void ConsReportExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
     }
 }

@@ -79,6 +79,8 @@
             UpdAppSearch.TabIndex = 27;
             UpdAppSearch.Text = "Search";
             UpdAppSearch.UseVisualStyleBackColor = true;
+            this.UpdAppSearch.Click += new System.EventHandler(this.UpdAppSearch_Click);
+
             // 
             // label3
             // 
@@ -156,6 +158,8 @@
             UpdAppSave.TabIndex = 37;
             UpdAppSave.Text = "Save";
             UpdAppSave.UseVisualStyleBackColor = true;
+            this.UpdAppSave.Click += new System.EventHandler(this.UpdAppSave_Click);
+
             // 
             // UpdAppCancel
             // 
@@ -165,6 +169,8 @@
             UpdAppCancel.TabIndex = 38;
             UpdAppCancel.Text = "Cancel";
             UpdAppCancel.UseVisualStyleBackColor = true;
+            this.UpdAppCancel.Click += new System.EventHandler(this.UpdAppCancel_Click);
+
             // 
             // UpdAppForm
             // 

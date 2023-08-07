@@ -59,6 +59,8 @@
             resources.ApplyResources(DelAppSearch, "DelAppSearch");
             DelAppSearch.Name = "DelAppSearch";
             DelAppSearch.UseVisualStyleBackColor = true;
+            this.DelAppSearch.Click += new System.EventHandler(this.DelAppSearch_Click);
+
             // 
             // DelAppCustID
             // 
@@ -75,12 +77,16 @@
             resources.ApplyResources(DelAppDel, "DelAppDel");
             DelAppDel.Name = "DelAppDel";
             DelAppDel.UseVisualStyleBackColor = true;
+            this.DelAppDel.Click += new System.EventHandler(this.DelAppDel_Click);
+
             // 
             // DelAppCancel
             // 
             resources.ApplyResources(DelAppCancel, "DelAppCancel");
             DelAppCancel.Name = "DelAppCancel";
             DelAppCancel.UseVisualStyleBackColor = true;
+            this.DelAppCancel.Click += new System.EventHandler(this.DelAppCancel_Click);
+
             // 
             // DelAppForm
             // 

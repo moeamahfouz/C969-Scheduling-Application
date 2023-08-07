@@ -64,6 +64,8 @@
             CustReportExit.TabIndex = 7;
             CustReportExit.Text = "Exit";
             CustReportExit.UseVisualStyleBackColor = true;
+            this.CustReportExit.Click += new System.EventHandler(this.CustReportExit_Click);
+
             // 
             // CustReportForm
             // 

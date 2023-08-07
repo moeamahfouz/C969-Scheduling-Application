@@ -138,6 +138,16 @@ namespace C969_Scheduling_Application
             HomeCalendar.DataSource = HomeAppCalendar(HomeRadioWeek.Checked);
         }
 
+        private void HomeRadioWeek_CheckedChanged(object sender, EventArgs e)
+        {
+            HomeCalUpdate();
+        }
+
+        private void HomeRadioMonth_CheckedChanged(object sender, EventArgs e)
+        {
+            HomeCalUpdate();
+        }
+
         private void HomeAddCust_Click(object sender, EventArgs e) //Opens New Customer page upon clicking New Customer
         {
             NewCustForm newCust = new NewCustForm();

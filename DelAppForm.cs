@@ -29,7 +29,7 @@ namespace C969_Scheduling_Application
             DelAppCustID.Text = appInfo["customerID"];
         }
 
-        private void DelAppDeleteButton_Click(object sender, EventArgs e)
+        private void DelAppDel_Click(object sender, EventArgs e)
         {
             DialogResult delAppConfirm = MessageBox.Show("Are you sure you want to delete this appointment?",
                 "Confirmation", MessageBoxButtons.YesNo);

@@ -110,6 +110,7 @@
             NewCustActiveYes.TabStop = true;
             NewCustActiveYes.Text = "Yes";
             NewCustActiveYes.UseVisualStyleBackColor = true;
+
             // 
             // NewCustActiveNo
             // 
@@ -195,6 +196,8 @@
             NewCustSave.TabIndex = 25;
             NewCustSave.Text = "Save";
             NewCustSave.UseVisualStyleBackColor = true;
+            this.NewCustSave.Click += new System.EventHandler(this.NewCustSave_Click);
+
             // 
             // NewCustCancel
             // 
@@ -205,6 +208,8 @@
             NewCustCancel.TabIndex = 26;
             NewCustCancel.Text = "Cancel";
             NewCustCancel.UseVisualStyleBackColor = true;
+            this.NewCustCancel.Click += new System.EventHandler(this.NewCustCancel_Click);
+
             // 
             // NewCustForm
             // 

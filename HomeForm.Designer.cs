@@ -79,6 +79,7 @@
             HomeRadioWeek.TabStop = true;
             HomeRadioWeek.Text = "Sort By Week";
             HomeRadioWeek.UseVisualStyleBackColor = true;
+            this.HomeRadioWeek.CheckedChanged += new System.EventHandler(this.HomeRadioWeek_CheckedChanged);
             // 
             // HomeRadioMonth
             // 
@@ -90,6 +91,7 @@
             HomeRadioMonth.TabStop = true;
             HomeRadioMonth.Text = "Sort By Month";
             HomeRadioMonth.UseVisualStyleBackColor = true;
+            this.HomeRadioMonth.CheckedChanged += new System.EventHandler(this.HomeRadioMonth_CheckedChanged);
             // 
             // HomeNewApp
             // 
@@ -99,6 +101,8 @@
             HomeNewApp.TabIndex = 17;
             HomeNewApp.Text = "New Appointment";
             HomeNewApp.UseVisualStyleBackColor = true;
+            this.HomeNewApp.Click += new System.EventHandler(this.HomeNewApp_Click);
+
             // 
             // HomeUpdApp
             // 
@@ -108,6 +112,8 @@
             HomeUpdApp.TabIndex = 18;
             HomeUpdApp.Text = "Update Appointment";
             HomeUpdApp.UseVisualStyleBackColor = true;
+            this.HomeUpdApp.Click += new System.EventHandler(this.HomeUpdApp_Click);
+
             // 
             // HomeDelApp
             // 
@@ -117,6 +123,8 @@
             HomeDelApp.TabIndex = 19;
             HomeDelApp.Text = "Delete Appointment";
             HomeDelApp.UseVisualStyleBackColor = true;
+            this.HomeDelApp.Click += new System.EventHandler(this.HomeDelApp_Click);
+
             // 
             // label2
             // 
@@ -136,6 +144,8 @@
             HomeAddCust.TabIndex = 21;
             HomeAddCust.Text = "New Customer";
             HomeAddCust.UseVisualStyleBackColor = true;
+            this.HomeAddCust.Click += new System.EventHandler(this.HomeAddCust_Click);
+
             // 
             // HomeUpdCust
             // 
@@ -145,6 +155,8 @@
             HomeUpdCust.TabIndex = 22;
             HomeUpdCust.Text = "Update Customer";
             HomeUpdCust.UseVisualStyleBackColor = true;
+            this.HomeUpdCust.Click += new System.EventHandler(this.HomeUpdCust_Click);
+
             // 
             // HomeDelCust
             // 
@@ -154,6 +166,8 @@
             HomeDelCust.TabIndex = 23;
             HomeDelCust.Text = "Delete Customer";
             HomeDelCust.UseVisualStyleBackColor = true;
+            this.HomeDelCust.Click += new System.EventHandler(this.HomeDelCust_Click);
+
             // 
             // label3
             // 
@@ -173,6 +187,8 @@
             HomeAppReport.TabIndex = 25;
             HomeAppReport.Text = "Appointments";
             HomeAppReport.UseVisualStyleBackColor = true;
+            this.HomeAppReport.Click += new System.EventHandler(this.HomeAppReport_Click);
+
             // 
             // HomeCustReport
             // 
@@ -182,6 +198,8 @@
             HomeCustReport.TabIndex = 26;
             HomeCustReport.Text = "Customers";
             HomeCustReport.UseVisualStyleBackColor = true;
+            this.HomeCustReport.Click += new System.EventHandler(this.HomeCustReport_Click);
+
             // 
             // HomeConsReport
             // 
@@ -191,6 +209,8 @@
             HomeConsReport.TabIndex = 27;
             HomeConsReport.Text = "Consultants";
             HomeConsReport.UseVisualStyleBackColor = true;
+            this.HomeConsReport.Click += new System.EventHandler(this.HomeConsReport_Click);
+
             // 
             // HomeExit
             // 
@@ -200,6 +220,8 @@
             HomeExit.TabIndex = 28;
             HomeExit.Text = "Exit";
             HomeExit.UseVisualStyleBackColor = true;
+            this.HomeExit.Click += new System.EventHandler(this.HomeExit_Click);
+
             // 
             // HomeForm
             // 

@@ -47,5 +47,10 @@ namespace C969_Scheduling_Application
 
             return custDataTable;
         }
+
+        private void CustReportExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

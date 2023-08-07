@@ -65,6 +65,8 @@
             AppReportExit.TabIndex = 8;
             AppReportExit.Text = "Exit";
             AppReportExit.UseVisualStyleBackColor = true;
+            this.AppReportExit.Click += new System.EventHandler(this.AppReportExit_Click);
+
             // 
             // AppReportForm
             // 

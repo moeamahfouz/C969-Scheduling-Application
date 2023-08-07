@@ -77,6 +77,8 @@
             DelCustSearch.TabIndex = 4;
             DelCustSearch.Text = "Search";
             DelCustSearch.UseVisualStyleBackColor = true;
+            this.DelCustSearch.Click += new System.EventHandler(this.DelCustSearch_Click);
+
             // 
             // DelCustDel
             // 
@@ -87,6 +89,8 @@
             DelCustDel.TabIndex = 12;
             DelCustDel.Text = "Delete";
             DelCustDel.UseVisualStyleBackColor = true;
+            this.DelCustDel.Click += new System.EventHandler(this.DelCustDel_Click);
+
             // 
             // DelCustCancel
             // 
@@ -97,6 +101,8 @@
             DelCustCancel.TabIndex = 13;
             DelCustCancel.Text = "Cancel";
             DelCustCancel.UseVisualStyleBackColor = true;
+            this.DelCustCancel.Click += new System.EventHandler(this.DelCustCancel_Click);
+
             // 
             // DelCustName
             // 

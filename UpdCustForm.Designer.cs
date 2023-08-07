@@ -85,6 +85,8 @@
             UpdCustSearch.TabIndex = 39;
             UpdCustSearch.Text = "Search";
             UpdCustSearch.UseVisualStyleBackColor = true;
+            this.UpdCustSearch.Click += new System.EventHandler(this.UpdCustSearch_Click);
+
             // 
             // label2
             // 
@@ -222,6 +224,8 @@
             UpdCustSave.TabIndex = 55;
             UpdCustSave.Text = "Save";
             UpdCustSave.UseVisualStyleBackColor = true;
+            this.UpdCustSave.Click += new System.EventHandler(this.UpdCustSave_Click);
+
             // 
             // UpdCustCancel
             // 
@@ -232,6 +236,8 @@
             UpdCustCancel.TabIndex = 56;
             UpdCustCancel.Text = "Cancel";
             UpdCustCancel.UseVisualStyleBackColor = true;
+            this.UpdCustCancel.Click += new System.EventHandler(this.UpdCustCancel_Click);
+
             // 
             // UpdCustForm
             // 

@@ -88,5 +88,10 @@ namespace C969_Scheduling_Application
 
             return appArray.ToArray();
         }
+
+        private void AppReportExit_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
