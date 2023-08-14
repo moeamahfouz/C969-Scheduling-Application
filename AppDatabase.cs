@@ -16,7 +16,7 @@ namespace C969_Scheduling_Application
         private static Dictionary<int, Hashtable> _appointmentDict = new Dictionary<int, Hashtable>();
         private static int _userID;
         private static string _userName;
-        public static string dbConnection = "server=127.0.0.1:3306;database=client_schedule;uid=sqlUser;pwd=Passw0rd!;";
+        public static string dbConnection = "server=127.0.0.1;Port=3306;database=client_schedule;uid=sqlUser;pwd=Passw0rd!;";
 
         public static int GetUserID()
         {
