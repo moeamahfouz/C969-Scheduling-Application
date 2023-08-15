@@ -97,11 +97,6 @@ namespace C969_Scheduling_Application
             {
                 logInsert =
 
-                //I had to use this code before in order to properly save entries since the "not needed" columns weren't nulled. I have dropped the "not needed" columns from the database in order to clean up my code and prevent issues.
-
-                //$"INSERT INTO {table} (appointmentID, customerID, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy, title, description, location, contact, url)" +
-                //$" VALUES ('{logID}', {poq}, '{userId}', '{timestamp}', '{userName}', '{timestamp}', '{userName}', '{defaultName}', '{defaultName}', '{defaultName}', '{defaultName}', '{defaultName}')";
-
                 $"INSERT INTO {table} (appointmentID, customerID, start, end, type, userID, createDate, createdBy, lastUpdate, lastUpdateBy)" +
                     $" VALUES ('{logID}', {poq}, '{userID}', '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
             }
@@ -183,7 +178,7 @@ namespace C969_Scheduling_Application
             //Customer city info
 
             customerDict.Add("city", reader[1].ToString());
-            customerDict.Add("countryId", reader[2].ToString());
+            customerDict.Add("countryID", reader[2].ToString());
             reader.Close();
 
             query = $"SELECT * FROM country WHERE countryID = '{customerDict["countryID"]}'";
@@ -213,7 +208,7 @@ namespace C969_Scheduling_Application
 
             Dictionary<string, string> appointmentDict = new Dictionary<string, string>();
             appointmentDict.Add("appointmentID", appID);
-            appointmentDict.Add("customerId", reader[1].ToString());
+            appointmentDict.Add("customerID", reader[1].ToString());
             appointmentDict.Add("type", reader[3].ToString());
             appointmentDict.Add("start", reader[7].ToString());
             appointmentDict.Add("end", reader[8].ToString());

@@ -46,7 +46,7 @@ namespace C969_Scheduling_Application
             s.Open();
 
             string query =
-                $"SELECT customerId, type, start, end, appointmentId, userId FROM appointment WHERE userid = '{AppDatabase.GetUserID()}'";
+                $"SELECT customerID, type, start, end, appointmentID, userId FROM appointment WHERE userid = '{AppDatabase.GetUserID()}'";
             MySqlCommand command = new MySqlCommand(query, s);
             MySqlDataReader reader = command.ExecuteReader();
 
@@ -55,11 +55,11 @@ namespace C969_Scheduling_Application
             while (reader.Read())
             {
                 Hashtable apps = new Hashtable();
-                apps.Add("customerId", reader[0]);
+                apps.Add("customerID", reader[0]);
                 apps.Add("type", reader[1]);
                 apps.Add("start", reader[2]);
                 apps.Add("end", reader[3]);
-                apps.Add("userId", reader[5]);
+                apps.Add("userID", reader[5]);
 
                 appointments.Add(Convert.ToInt32(reader[4]), apps);
             }
