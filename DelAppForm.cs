@@ -26,7 +26,7 @@ namespace C969_Scheduling_Application
             string appID = DelAppID.Text;
             appInfo = AppDatabase.GetAppInfo(appID);
             DelAppType.Text = appInfo["type"];
-            DelAppCustID.Text = appInfo["customerID"];
+            DelAppCustID.Text = appInfo["customerId"];
         }
 
         private void DelAppDel_Click(object sender, EventArgs e)
@@ -53,7 +53,7 @@ namespace C969_Scheduling_Application
             s.Open();
 
             string logDeletion = $"DELETE FROM appointment" +
-                                 $" WHERE appointmentID = '{appInfo["appointmentID"]}'";
+                                 $" WHERE appointmentId = '{appInfo["appointmentId"]}'";
             MySqlCommand command = new MySqlCommand(logDeletion, s);
             int deletedApp = command.ExecuteNonQuery();
             s.Close();

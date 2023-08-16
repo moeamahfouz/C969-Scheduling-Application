@@ -27,8 +27,8 @@ namespace C969_Scheduling_Application
             s.Open();
 
             string logUpdate = $"UPDATE appointment" +
-                               $" SET customerID = '{updApp["customerID"]}', type = '{updApp["type"]}', start = '{updApp["start"]}', end = '{updApp["end"]}', lastUpdate = '{AppDatabase.LogTimeStamp()}', lastUpdateBy = '{AppDatabase.LogTimeStamp()}'" +
-                               $" WHERE appointmentID = '{updApp["appointmentID"]}'";
+                               $" SET customerId = '{updApp["customerId"]}', type = '{updApp["type"]}', start = '{updApp["start"]}', end = '{updApp["end"]}', lastUpdate = '{AppDatabase.LogTimeStamp()}', lastUpdateBy = '{AppDatabase.LogTimeStamp()}'" +
+                               $" WHERE appointmentId = '{updApp["appointmentId"]}'";
             MySqlCommand command = new MySqlCommand(logUpdate, s);
             int updatedApp = command.ExecuteNonQuery();
 

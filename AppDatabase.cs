@@ -153,11 +153,11 @@ namespace C969_Scheduling_Application
 
             Dictionary<string, string> customerDict = new Dictionary<string, string>();
             customerDict.Add("customerName", reader[1].ToString());
-            customerDict.Add("addressID", reader[2].ToString());
+            customerDict.Add("addressId", reader[2].ToString());
             customerDict.Add("active", reader[3].ToString());
             reader.Close();
 
-            query = $"SELECT * FROM address WHERE addressID = '{customerDict["addressID"]}'";
+            query = $"SELECT * FROM address WHERE addressId = '{customerDict["addressId"]}'";
             command = new MySqlCommand(query, s);
             reader = command.ExecuteReader();
             reader.Read();
@@ -165,12 +165,12 @@ namespace C969_Scheduling_Application
             //Customer address info
 
             customerDict.Add("address", reader[1].ToString());
-            customerDict.Add("cityID", reader[3].ToString());
+            customerDict.Add("cityId", reader[3].ToString());
             customerDict.Add("postalCode", reader[4].ToString());
             customerDict.Add("phone", reader[5].ToString());
             reader.Close();
 
-            query = $"SELECT * FROM city WHERE cityID = '{customerDict["cityID"]}'";
+            query = $"SELECT * FROM city WHERE cityId = '{customerDict["cityId"]}'";
             command = new MySqlCommand(query, s);
             reader = command.ExecuteReader();
             reader.Read();
@@ -178,10 +178,10 @@ namespace C969_Scheduling_Application
             //Customer city info
 
             customerDict.Add("city", reader[1].ToString());
-            customerDict.Add("countryID", reader[2].ToString());
+            customerDict.Add("countryId", reader[2].ToString());
             reader.Close();
 
-            query = $"SELECT * FROM country WHERE countryID = '{customerDict["countryID"]}'";
+            query = $"SELECT * FROM country WHERE countryId = '{customerDict["countryId"]}'";
             command = new MySqlCommand(query, s);
             reader = command.ExecuteReader();
             reader.Read();
@@ -197,7 +197,7 @@ namespace C969_Scheduling_Application
 
         public static Dictionary<string, string> GetAppInfo(string appID) //Retrieves appointment information when called.
         {
-            string query = $"SELECT * FROM appointment WHERE appointmentID = '{appID}'";
+            string query = $"SELECT * FROM appointment WHERE appointmentId = '{appID}'";
             MySqlConnection s = new MySqlConnection(AppDatabase.dbConnection);
             s.Open();
             MySqlCommand command = new MySqlCommand(query, s);
@@ -207,8 +207,8 @@ namespace C969_Scheduling_Application
             //Customer appointment information
 
             Dictionary<string, string> appointmentDict = new Dictionary<string, string>();
-            appointmentDict.Add("appointmentID", appID);
-            appointmentDict.Add("customerID", reader[1].ToString());
+            appointmentDict.Add("appointmentId", appID);
+            appointmentDict.Add("customerId", reader[1].ToString());
             appointmentDict.Add("type", reader[3].ToString());
             appointmentDict.Add("start", reader[7].ToString());
             appointmentDict.Add("end", reader[8].ToString());
