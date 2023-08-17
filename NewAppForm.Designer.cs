@@ -100,7 +100,6 @@
             NewAppStart.Name = "NewAppStart";
             NewAppStart.Size = new Size(200, 23);
             NewAppStart.TabIndex = 11;
-
             // 
             // label5
             // 
@@ -128,8 +127,7 @@
             NewAppSave.TabIndex = 14;
             NewAppSave.Text = "Save";
             NewAppSave.UseVisualStyleBackColor = true;
-            this.NewAppSave.Click += new System.EventHandler(this.NewAppSave_Click);
-
+            NewAppSave.Click += NewAppSave_Click;
             // 
             // NewAppCancel
             // 
@@ -139,8 +137,7 @@
             NewAppCancel.TabIndex = 15;
             NewAppCancel.Text = "Cancel";
             NewAppCancel.UseVisualStyleBackColor = true;
-            this.NewAppCancel.Click += new System.EventHandler(this.NewAppCancel_Click);
-
+            NewAppCancel.Click += NewAppCancel_Click;
             // 
             // NewAppForm
             // 
@@ -158,9 +155,10 @@
             Controls.Add(NewAppCustID);
             Controls.Add(label3);
             Controls.Add(label1);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "NewAppForm";
             Text = "New Appointment";
+            Load += NewAppForm_Load;
             ResumeLayout(false);
             PerformLayout();
         }

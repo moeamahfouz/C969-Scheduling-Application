@@ -97,8 +97,8 @@ namespace C969_Scheduling_Application
             {
                 logInsert =
 
-                $"INSERT INTO {table} (appointmentID, customerID, start, end, type, userID, createDate, createdBy, lastUpdate, lastUpdateBy)" +
-                    $" VALUES ('{logID}', {poq}, '{userID}', '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
+                $"INSERT INTO {table} (appointmentId, customerId, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy)" +
+                                    $" VALUES ('{logID}', {poq}, '{userID}', '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
             }
 
             MySqlConnection s = new MySqlConnection(dbConnection);

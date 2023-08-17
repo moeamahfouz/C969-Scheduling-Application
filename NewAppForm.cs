@@ -101,5 +101,9 @@ namespace C969_Scheduling_Application
             Close();
         }
 
+        private void NewAppForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

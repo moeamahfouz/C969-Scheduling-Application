@@ -10,7 +10,7 @@ namespace C969_Scheduling_Application
     {
         public static void TrackUserLogin(int UserID)
         {
-            //Creates a log file called "Scheduler Log File" in bin\debug\netcoreapp3.1\log.txt if it does not exist, which then populates with user info and time of log-in.
+            //Creates a log file called "Scheduler Log File" in bin\debug\net7.0-windows\log.txt if it does not exist, which then populates with user info and time of log-in.
 
             string path = @"log.txt";
             if (!File.Exists(path))
