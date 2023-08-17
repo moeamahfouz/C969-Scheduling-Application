@@ -22,7 +22,7 @@ namespace C969_Scheduling_Application
 
         private void UserRegion(int LCID) //If LCID matches 1040 (Italy), translates all text to Italian 
         {
-            if (LCID == 2058)
+            if (LCID == 1040)
             {
                 this.Text = "Agenda appuntamenti";
                 LoginLabel.Text = "Registrazione";
