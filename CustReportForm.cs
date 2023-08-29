@@ -40,7 +40,7 @@ namespace C969_Scheduling_Application
 
                 row["Number of Appointments"] = numAppointments
                     .Where(i => i.Value["customerName"].ToString() == x.ToString()).Count()
-                    .ToString(); //Lambda function that displays the number of appointments a customer has next to their name.
+                    .ToString(); //Lambda function that displays the number of appointments a customer has next to their name. Eliminates the need to create a whole new function as this is only applicable here.
 
                 custDataTable.Rows.Add(row);
             }

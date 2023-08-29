@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using MySqlX.XDevAPI.Relational;
 
 
 namespace C969_Scheduling_Application
@@ -88,6 +89,13 @@ namespace C969_Scheduling_Application
             int logID = MakeID(table);
             string defaultName = "not needed";
             string logInsert;
+
+            MySqlConnection d = new MySqlConnection(dbConnection);
+            d.Open();
+            MySqlCommand dropUnnecessaryColumnsCommand = new MySqlCommand($"ALTER TABLE appointment DROP COLUMN title, location, contact, url, lastUpdate, lastUpdateBy", d);
+            dropUnnecessaryColumnsCommand.ExecuteNonQuery();
+            d.Close(); //Lambda expression to drop unnecessary columns from appointment table, prevents the need for a separate function to perform this task.
+
             if (userID == 0)
             {
                 logInsert = $"INSERT INTO {table}" +
