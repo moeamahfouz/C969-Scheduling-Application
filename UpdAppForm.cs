@@ -99,11 +99,11 @@ namespace C969_Scheduling_Application
             if (BusinessHourConflict(startTime, endTime))
             {
                 HomeUpdApp.HomeCalUpdate();
-                MessageBox.Show("Appointment successfully updated.", "Success");
-                Close();
+               // MessageBox.Show("Appointment successfully updated.", "Success");
                 MessageBox.Show(
                     "This appointment falls outside of business hours, please choose a different time and try again.",
                     "Error");
+               // Close();
             }
             else if (AppointConflict(startTime, endTime))
             {
