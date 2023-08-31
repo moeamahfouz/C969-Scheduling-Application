@@ -30,9 +30,9 @@ namespace C969_Scheduling_Application
             {
                 DateTime currentTime = DateTime.UtcNow;
                 DateTime startTime = DateTime.Parse(row.Cells[2].Value.ToString()).ToUniversalTime();
-                TimeSpan timeUntilApp = currentTime - startTime;
+                TimeSpan timeUntilApp = startTime - currentTime;
 
-                if (timeUntilApp.TotalMinutes >= -15 && timeUntilApp.TotalMinutes < 1)
+                if (timeUntilApp.TotalMinutes <= 15 && timeUntilApp.TotalMinutes > 1)
                 {
                     MessageBox.Show(
                         $"You have an upcoming appointment with {row.Cells[4].Value} at {row.Cells[2].Value}");

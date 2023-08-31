@@ -89,13 +89,6 @@ namespace C969_Scheduling_Application
             int logId = MakeID(table);
             string defaultName = "not needed";
             string logInsert;
-
-           // MySqlConnection d = new MySqlConnection(dbConnection);
-           // d.Open();
-           // MySqlCommand dropUnnecessaryColumnsCommand = new MySqlCommand($"ALTER TABLE appointment DROP COLUMN title, location, contact, url, lastUpdate, lastUpdateBy", d);
-           // dropUnnecessaryColumnsCommand.ExecuteNonQuery();
-           // d.Close(); //Lambda expression to drop unnecessary columns from appointment table, prevents the need for a separate function to perform this task.
-
             if (userId == 0)
             {
                 logInsert = $"INSERT INTO {table}" +
@@ -108,8 +101,6 @@ namespace C969_Scheduling_Application
                  $"INSERT INTO {table} (appointmentId, customerId, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy, title, description, location, contact, url)" +
                  $" VALUES ('{logId}', {poq}, '{userId}', '{timestamp}', '{userName}', '{timestamp}', '{userName}', '{defaultName}', '{defaultName}', '{defaultName}', '{defaultName}', '{defaultName}')";
 
-             //   $"INSERT INTO {table} (appointmentId, customerId, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy)" +
-             //                       $" VALUES ('{logID}', {poq}, '{userID}', '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
             }
 
             MySqlConnection s = new MySqlConnection(dbConnection);
