@@ -84,29 +84,32 @@ namespace C969_Scheduling_Application
             return NewUserID(idList);
         }
 
-        public static int NewLog(string timestamp, string userName, string table, string poq, int userID = 0) //This logs information upon a new entry
+        public static int NewLog(string timestamp, string userName, string table, string poq, int userId = 0) //This logs information upon a new entry
         {
-            int logID = MakeID(table);
+            int logId = MakeID(table);
             string defaultName = "not needed";
             string logInsert;
 
-            MySqlConnection d = new MySqlConnection(dbConnection);
-            d.Open();
-            MySqlCommand dropUnnecessaryColumnsCommand = new MySqlCommand($"ALTER TABLE appointment DROP COLUMN title, location, contact, url, lastUpdate, lastUpdateBy", d);
-            dropUnnecessaryColumnsCommand.ExecuteNonQuery();
-            d.Close(); //Lambda expression to drop unnecessary columns from appointment table, prevents the need for a separate function to perform this task.
+           // MySqlConnection d = new MySqlConnection(dbConnection);
+           // d.Open();
+           // MySqlCommand dropUnnecessaryColumnsCommand = new MySqlCommand($"ALTER TABLE appointment DROP COLUMN title, location, contact, url, lastUpdate, lastUpdateBy", d);
+           // dropUnnecessaryColumnsCommand.ExecuteNonQuery();
+           // d.Close(); //Lambda expression to drop unnecessary columns from appointment table, prevents the need for a separate function to perform this task.
 
-            if (userID == 0)
+            if (userId == 0)
             {
                 logInsert = $"INSERT INTO {table}" +
-                            $" VALUES ('{logID}', {poq}, '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
+                            $" VALUES ('{logId}', {poq}, '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
             }
             else
             {
                 logInsert =
 
-                $"INSERT INTO {table} (appointmentId, customerId, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy)" +
-                                    $" VALUES ('{logID}', {poq}, '{userID}', '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
+                 $"INSERT INTO {table} (appointmentId, customerId, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy, title, description, location, contact, url)" +
+                 $" VALUES ('{logId}', {poq}, '{userId}', '{timestamp}', '{userName}', '{timestamp}', '{userName}', '{defaultName}', '{defaultName}', '{defaultName}', '{defaultName}', '{defaultName}')";
+
+             //   $"INSERT INTO {table} (appointmentId, customerId, start, end, type, userId, createDate, createdBy, lastUpdate, lastUpdateBy)" +
+             //                       $" VALUES ('{logID}', {poq}, '{userID}', '{timestamp}', '{userName}', '{timestamp}', '{userName}')";
             }
 
             MySqlConnection s = new MySqlConnection(dbConnection);
@@ -115,7 +118,7 @@ namespace C969_Scheduling_Application
             command.ExecuteNonQuery();
             s.Close();
 
-            return logID;
+            return logId;
         }
 
         public static int LookupCustomer(string enterCust) //This allows users to look up customers in search bars using the customerId.
