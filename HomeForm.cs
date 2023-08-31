@@ -19,9 +19,9 @@ namespace C969_Scheduling_Application
         public HomeForm()
         {
             InitializeComponent();
-            UpcomingApps(HomeCalendar);
             HomeRadioMonth.Checked = true;
             HomeCalendar.DataSource = HomeAppCalendar(HomeRadioWeek.Checked); //These two lines display month view by default, populates week view if week radio is clicked
+            UpcomingApps(HomeCalendar);
         }
 
         public static void UpcomingApps(DataGridView homeCalendar) //Displays notification showing user their upcoming appointments
@@ -30,9 +30,9 @@ namespace C969_Scheduling_Application
             {
                 DateTime currentTime = DateTime.UtcNow;
                 DateTime startTime = DateTime.Parse(row.Cells[2].Value.ToString()).ToUniversalTime();
-                TimeSpan timeUntilApp = startTime - currentTime;
+                TimeSpan timeUntilApp = currentTime - startTime;
 
-                if (timeUntilApp.TotalMinutes <= 15 && timeUntilApp.TotalMinutes > 1)
+                if (timeUntilApp.TotalMinutes >= -15 && timeUntilApp.TotalMinutes < 1)
                 {
                     MessageBox.Show(
                         $"You have an upcoming appointment with {row.Cells[4].Value} at {row.Cells[2].Value}");
