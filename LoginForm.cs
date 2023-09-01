@@ -23,7 +23,7 @@ namespace C969_Scheduling_Application
 
         private void UserRegion(int LCID) //If LCID matches 1040 (Italy), translates all text to Italian 
         {
-            //LCID = 1040; //Set region code to 1040 in order to test Italian translation capabilities
+            //LCID = 1040; //Set region code to 1040 in order to test Italian translation capabilities, uncomment the LCID on this line to confirm it works
             System.Diagnostics.Debug.WriteLine(LCID); //This will write the current detected region code to debug console, while testing it reported region code 1033
             if (LCID == 1040)
             {

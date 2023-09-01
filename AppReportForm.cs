@@ -68,7 +68,7 @@ namespace C969_Scheduling_Application
                     appReport.appMonth = appMonths[month].ToString();
                     appReport.appType = appointment["type"].ToString();
 
-                    //Lambda function that counts distinct types of appointments within the month the report is on and lists them
+                    //Lambda function that counts distinct types of appointments within the month the report is on and lists them, removing the need to create a unique function as this would only be used for this function.
 
                     appReport.numApps = AppDatabase.GetAppointments().Where(i =>
                         i.Value["type"].ToString() == appointment["type"].ToString() &&
